@@ -11,7 +11,7 @@ public class TextReaderApplication {
             String text = reader.readToString("src/main/resources/fileTest.txt");
             int counts = counter.count(text);
 
-            System.out.printf("File content: %s;\nNumber of words: %o%n", new Object[] {text, counts});
+            System.out.printf("File content: %s;\nNumber of words: %o%n", text, counts);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
